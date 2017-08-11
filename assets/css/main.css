@@ -45,6 +45,12 @@ li a:hover {
 .div_images{
     display: inline;
 }
+.btn_hidden{
+    display: none;
+}
+.btn_inline{
+   display: inline;
+}
 
 /*button X cerrar cada imagen*/
 .btnX{
