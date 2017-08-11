@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    background-color: #c5b54d;
 }
 /* nav bar */
 ul{
@@ -32,18 +33,30 @@ li a:hover {
 	text-align: center;
 	padding: 20px 20px;
 	font-weight: bolder;
+    /*display: inline-flex;*/
 }
-.images{
+.div_images img{
 	border: 5px solid #d6bcbc;
 	margin: 10px 10px;
     height: 200px;
-    width: 200px
+    width: 200px;
+    z-index: 1;
+}
+.div_images{
+    display: inline;
+}
+
+/*button X cerrar cada imagen*/
+.btnX{
+    position: absolute;
+    z-index: 2;
 }
 
 /*barra 2 */
 
 .navbar_2{
     text-align: center;
+    background: #c5b54d;
 }
 
 .navbar_2 span{
@@ -53,3 +66,14 @@ li a:hover {
 }
 
 /* contenido */
+
+.contenido_1{
+    float: left;
+    padding-left: 25px;
+    width: 45%;
+}
+.contenido_2{
+    float: right;
+    width: 45%;
+    padding-right: 25px;
+}
