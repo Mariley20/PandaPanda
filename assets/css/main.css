@@ -1,85 +1,112 @@
-body{
+body {
     margin: 0;
     background-color: #c5b54d;
 }
+
 /* nav bar */
-ul{
+li:first-child{
+    padding-left: 210px;
+}
+
+ul {
     list-style: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #993737;
     font-family: 'Roboto';
 }
-ul li{
+
+ul li {
     display: inline-block;
 }
-ul li a{
-	display: inline-block;
-	color: white;
-	text-align: center;
-	padding: 26px;
-	text-decoration: none;
-}
-li a:hover {
-	background-color: #FFE900;
-	color: #333;
+
+ul li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
 }
 
+li a:hover {
+    text-decoration: underline;
+}
+
+
+
 /* imagenes */
-.pictures{
+
+.pictures {
     background: #c5b54d;
-	font-size: 30px;
-	text-align: center;
-	padding: 20px 20px;
-	font-weight: bolder;
+    font-size: 32px;
+    text-align: center;
+    padding: 20px 20px;
+    font-weight: bolder;
     /*display: inline-flex;*/
 }
-.div_images img{
-	border: 5px solid #d6bcbc;
-	margin: 10px 10px;
+
+.div_images img {
+    border: 5px solid #d6bcbc;
+    margin: 10px 10px;
     height: 200px;
     width: 200px;
     z-index: 1;
 }
-.div_images{
+
+.div_images {
     display: inline;
 }
-.btn_hidden{
+
+.btn_hidden {
     display: none;
 }
-.btn_inline{
-   display: inline;
+
+.btnX:hover {
+    background: #d6bcbc;
+    height: 30px;
 }
 
 /*button X cerrar cada imagen*/
-.btnX{
+
+.btnX {
     position: absolute;
+    margin: 10px -33px;
+    color: #FFFFFF;
     z-index: 2;
 }
 
+
 /*barra 2 */
 
-.navbar_2{
+.navbar_2 {
     text-align: center;
     background: #c5b54d;
 }
 
-.navbar_2 span{
+.navbar_2 span {
+    display: inline-block;
+    width: 23%;
     background: #993737;
-    padding: 5px 100px;
     color: aliceblue;
+    padding: 10px 0px;
+    cursor: pointer;
 }
 
 /* contenido */
 
-.contenido_1{
-    float: left;
-    padding-left: 25px;
-    width: 45%;
+.contenido_1,
+.contenido_2 {
+    width: 34%;
+    text-align: justify;
 }
-.contenido_2{
+
+.contenido_1 {
+    float: left;
+    padding-left: 15%;
+}
+
+.contenido_2 {
     float: right;
-    width: 45%;
-    padding-right: 25px;
+    padding-right: 15%;
 }
